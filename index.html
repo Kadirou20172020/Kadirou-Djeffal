@@ -22,8 +22,12 @@
         </div>
     </nav>
 
-    <!-- Accueil -->
+    <!-- Hero Section with Background -->
     <section id="accueil" class="hero">
+        <div class="hero-background">
+            <div class="tech-grid"></div>
+            <div class="floating-orbs"></div>
+        </div>
         <div class="hero-content">
             <h1>Kadirou Djeffal</h1>
             <p class="subtitle">Développeur Web & Mobile | Solution Technologique</p>
@@ -37,9 +41,27 @@
         <div class="container">
             <h2>A Propos de Moi</h2>
             <div class="about-content">
+                <div class="about-image">
+                    <div class="code-snippet">
+                        <span class="code-tag">&lt;html&gt;</span>
+                        <span class="code-line">const developer = {</span>
+                        <span class="code-line">  passion: '∞',</span>
+                        <span class="code-line">  experience: '5+ ans',</span>
+                        <span class="code-line">  skills: ['Web', 'Mobile']</span>
+                        <span class="code-line">}</span>
+                        <span class="code-tag">&lt;/html&gt;</span>
+                    </div>
+                </div>
                 <div class="about-text">
                     <p>Je suis un développeur web passionné avec plus de 5 ans d'expérience dans la création de solutions web innovantes. Je spécialise en HTML5, CSS3, JavaScript et dans les frameworks modernes.</p>
                     <p>Mon objectif est de transformer vos idées en applications web fonctionnelles et esthétiques.</p>
+                    <div class="tech-badges">
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">React</span>
+                        <span class="badge">Node.js</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -51,22 +73,60 @@
             <h2>Mes Projets</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">Site Web</div>
-                    <h3>E-Commerce Platform</h3>
-                    <p>Une plateforme e-commerce complète avec panier d'achat et système de paiement</p>
-                    <a href="#" class="btn btn-secondary">Voir Plus</a>
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <img src="https://via.placeholder.com/400x250/667eea/ffffff?text=E-Commerce" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Une plateforme e-commerce complète avec panier d'achat et système de paiement</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Voir Plus</a>
+                    </div>
                 </div>
+
                 <div class="project-card">
-                    <div class="project-image">Application</div>
-                    <h3>Task Management App</h3>
-                    <p>Application de gestion de tâches avec synchronisation en temps réel</p>
-                    <a href="#" class="btn btn-secondary">Voir Plus</a>
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <img src="https://via.placeholder.com/400x250/f5576c/ffffff?text=Task+Manager" alt="Task Management App">
+                        <div class="project-overlay">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>Application de gestion de tâches avec synchronisation en temps réel</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">WebSocket</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Voir Plus</a>
+                    </div>
                 </div>
+
                 <div class="project-card">
-                    <div class="project-image">Portefeuille</div>
-                    <h3>Creative Portfolio</h3>
-                    <p>Site portefeuille interactif pour designers et créatifs</p>
-                    <a href="#" class="btn btn-secondary">Voir Plus</a>
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <img src="https://via.placeholder.com/400x250/00f2fe/ffffff?text=Portfolio" alt="Creative Portfolio">
+                        <div class="project-overlay">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Creative Portfolio</h3>
+                        <p>Site portefeuille interactif pour designers et créatifs</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Animation</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Voir Plus</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,24 +138,47 @@
             <h2>Compétences</h2>
             <div class="skills-grid">
                 <div class="skill">
-                    <i class="fas fa-code"></i>
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <i class="fas fa-code"></i>
+                    </div>
                     <h3>Frontend</h3>
                     <p>HTML5, CSS3, JavaScript, React, Vue.js</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 95%"></div>
+                    </div>
                 </div>
+
                 <div class="skill">
-                    <i class="fas fa-database"></i>
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <i class="fas fa-database"></i>
+                    </div>
                     <h3>Backend</h3>
                     <p>Node.js, Python, PHP, MongoDB, MySQL</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 90%"></div>
+                    </div>
                 </div>
+
                 <div class="skill">
-                    <i class="fas fa-mobile-alt"></i>
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
                     <h3>Mobile</h3>
                     <p>React Native, Flutter, Responsive Design</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 85%"></div>
+                    </div>
                 </div>
+
                 <div class="skill">
-                    <i class="fas fa-tools"></i>
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <i class="fas fa-tools"></i>
+                    </div>
                     <h3>Outils</h3>
                     <p>Git, Docker, Webpack, VS Code, Figma</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 88%"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,16 +192,29 @@
                 <form class="contact-form" method="POST" action="https://formspree.io/f/myzkyrkd">
                     <input type="text" name="name" placeholder="Votre Nom" required>
                     <input type="email" name="email" placeholder="Votre Email" required>
-                    <textarea  name="message"placeholder="Votre Message" rows="5" required></textarea>
+                    <textarea name="message" placeholder="Votre Message" rows="5" required></textarea>
                     <button type="submit" class="btn btn-primary">Envoyer</button>
                 </form>
+
                 <div class="contact-info">
-                    <p><strong>Email:</strong> kadirou@example.com</p>
-                    <p><strong>Téléphone:</strong> +33 1 23 45 67 89</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>kadirou@example.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                    </div>
                     <div class="social-links">
-                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
